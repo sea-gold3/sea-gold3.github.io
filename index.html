@@ -379,6 +379,7 @@
             clearInterval(times);
             times=null;
             falg = false;
+            falg2= false;
             h1z.innerHTML="最高分："+tcsMAX+"当前分："+ii+"，游戏暂停";
         }
         else{
@@ -386,6 +387,7 @@
                 ttp.goS(ttp.moveDirection)
             },timeStar);
             falg = true;
+            falg2 = true;
             h1z.innerHTML="最高分："+tcsMAX+"当前分："+ii;
         }
     }
