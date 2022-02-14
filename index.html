@@ -173,6 +173,7 @@
     var h1z =document.getElementById("h1z");
     var timeStar;
     var falg = true;
+    var falg2 =true;
     var tcsMAX =JSON.parse(localStorage.getItem('tanchiseMAX')) || "无";
     h1z.innerHTML="最高分："+tcsMAX+"当前分："+ii;
 
@@ -290,6 +291,7 @@
     }
 
     sank.prototype.goS=function (directionS){
+        falg2=false;
         //读取sankHnadPosition确定旧蛇头位置
         let SHPositionOledX = sankHnadPosition[0];
         let SHPositionOledY = sankHnadPosition[1];
@@ -331,6 +333,7 @@
             let shen =document.getElementsByClassName('divs');
             shen[0].remove();
         }
+        falg2=true;
     }
 
     //启动函数
@@ -346,25 +349,25 @@
 
     //转向
     function right(){
-        if(ttp.moveDirection!=ttp.direction.left){
+        if(falg2&&ttp.moveDirection!=ttp.direction.left){
             ttp.moveDirection=ttp.direction.right;
         }
     }
 
     function left(){
-        if(ttp.moveDirection!=ttp.direction.right){
+        if(falg2&&ttp.moveDirection!=ttp.direction.right){
             ttp.moveDirection=ttp.direction.left;
         }
     }
 
     function up(){
-        if(ttp.moveDirection!=ttp.direction.dow){
+        if(falg2&&ttp.moveDirection!=ttp.direction.dow){
             ttp.moveDirection=ttp.direction.up;
         }
     }
 
     function dow(){
-        if(ttp.moveDirection!=ttp.direction.up){
+        if(falg2&&ttp.moveDirection!=ttp.direction.up){
             ttp.moveDirection=ttp.direction.dow;
         }
     }
