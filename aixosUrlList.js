@@ -1,1 +1,0 @@
-exports.axiosUrlList =['http://124.222.189.67:80/api/history','http://124.222.189.67:80/api/saying','http://124.222.189.67:80/api/draw','http://124.222.189.67:80/api/musics'];
