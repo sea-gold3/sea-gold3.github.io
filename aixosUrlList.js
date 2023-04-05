@@ -1,2 +1,0 @@
-// exports.axiosUrlList =['https://www.saohimeyue.space/api/history','https://www.saohimeyue.space/api/saying','https://www.saohimeyue.space/api/musics'];
-exports.axiosUrlList =['http://127.0.0.1:3000/api/history','http://127.0.0.1:3000/api/saying','http://127.0.0.1:3000/api/musics'];
